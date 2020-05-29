@@ -32,6 +32,7 @@ main {
   margin: auto;
   padding: 2rem 0rem;
   z-index: 2;
+  position: relative;
 }
 
 .line1,
@@ -279,7 +280,7 @@ body.hide {
   color: rgb(167, 110, 231);
 }
 
-.fasion3 h1 {
+.fashion3 h1 {
   color: rgb(86, 124, 228);
 }
 
@@ -320,4 +321,96 @@ body.hide {
 .swipe3 {
   background: rgb(255, 139, 93);
   z-index: 3;
+}
+
+@media screen and (max-width: 1500px) {
+  .fashion-text h1 {
+    font-size: 2rem;
+    padding: 1rem 0rem;
+  }
+
+  .fashion-text p {
+    font-size: 1.2rem;
+  }
+
+  .fashion-image img {
+    height: 50vh;
+    object-position: top;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  main {
+    width: 100%;
+    margin: 0;
+  }
+
+  .slide {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-description {
+    padding: 0;
+  }
+
+  .hero-image {
+    padding-top: 2rem;
+  }
+
+  .hero-description h2 {
+    font-size: 1.6rem;
+    padding: 1rem 0rem;
+  }
+
+  .hero-description p {
+    padding: 2rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+  }
+
+  .explore {
+    width: 60%;
+    margin: auto;
+  }
+
+  .detail-slide {
+    width: 100%;
+    text-align: center;
+  }
+
+  .fashion-text p {
+    margin-bottom: 5rem;
+    padding: 0;
+  }
+
+  .fashion-text h1 {
+    margin: 2rem 0rem;
+  }
+
+  .fasion-number {
+    font-size: 8rem;
+  }
+
+  .nav-bar {
+    display: block;
+  }
+
+  .nav-links {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .contact h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .contact p {
+    font-size: 1.2rem;
+    padding: 2rem;
+    text-align: center;
+  }
 }
