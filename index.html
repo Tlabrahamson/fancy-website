@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./style.css" />
     <title>Fancy Website</title>
   </head>
-  <body>
+  <body data-barba="wrapper">
     <header class="nav-header">
       <h1><a href="./index.html" id="logo">FNCY.</a></h1>
       <div class="burger">
@@ -19,7 +19,7 @@
         <div class="line2"></div>
       </div>
     </header>
-    <main>
+    <main data-barba="container" data-barba-namespace="home">
       <section class="mountain slide">
         <div class="hero-image">
           <img src="./images/forest.png" alt="forest image" />
@@ -79,7 +79,9 @@
             ipsa perspiciatis tempora quo quisquam. Mollitia ipsa alias totam
             at!
           </p>
-          <a class="explore fashion-explore">Explore</a>
+          <a href="./pages/index.html" class="explore fashion-explore"
+            >Explore</a
+          >
           <div class="reveal-text"></div>
         </div>
       </section>
@@ -105,6 +107,7 @@
     <div class="swipe swipe1"></div>
     <div class="swipe swipe2"></div>
     <div class="swipe swipe3"></div>
+    <script src="https://unpkg.com/@barba/core"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"
       integrity="sha256-2p2tRZlPowp3P/04Pw2rqVCSbhyV/IB7ZEVUglrDS/c="
